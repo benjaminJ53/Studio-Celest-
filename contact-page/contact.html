@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio-Celest: Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <img class="logo" src="contact-images/logo-studio-celest.png" alt="Studio Celest Logo"/>
+    </div>
+
+  <nav class="header__nav">
+    <a href="../front-page/index.html"    class="header__link">Home</a>
+    <a href="../products-page/product.html" class="header__link">Products</a>
+    <a href="../basket-page/basket.html"  class="header__link">Basket(<span id="basket-count">0</span>)</a>
+    <a href="../contact-page/contact.html" class="header__link">Contact</a>
+  </nav>
+</header>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page">
+    <h1>Contact Us</h1>
+    <p>Have questions? Need support? Fill out the form below and we’ll get back to you as soon as possible.</p>
+  </section>
+
+  <!-- ===== Contact Form ===== -->
+  <section class="contact-form">
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="banner-btn">Send Message</button>
+    </form>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+  <p>&copy; 2025 Studio-Celest. All rights reserved.</p>
+</footer>
+
+<script src="Products Page/product.js"></script>
+</body>
+</html>

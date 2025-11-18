@@ -1,0 +1,415 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+/* Variables */
+:root {
+  --colour-primary: #796eff;
+  --colour-primary-tint: #f6f3fc;
+  --colour-background-light: #fbfafe;
+  --colour-background-dark: #1d2830;
+  --colour-text-heading: #35414b;
+  --colour-text-body: #4e5a65;
+
+  --spacing-xs: 8px;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+
+  --font-size-heading-xl: 64px;
+  --font-size-heading-l: 40px;
+  --font-size-heading-m: 32px;
+  --font-size-body: 16px;
+  --font-line-height-heading: 1.2;
+  --font-line-height-body: 1.5;
+
+  --border-radius: 12px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   BASE / RESET
+   ========================================================================== */
+/* (Optional) Ensure box-sizing applies everywhere */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* General Styles */
+body {
+  font-family: "Inter", sans-serif; /* ensure Inter is loaded via <link> or @import */
+  color: var(--colour-text-body);
+  font-size: var(--font-size-body);
+  line-height: var(--font-line-height-body);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   CONTENT BLOCK (GENERIC WRAPPER)
+   ========================================================================== */
+/* Content Block Sections */
+.content-block {
+  text-align: center;
+  margin: var(--spacing-m) auto;
+  display: flex;
+  justify-content: center;
+}
+
+.content-block--alt {
+  background-color: var(--colour-background-light);
+}
+
+.content-block__content {
+  width: 100%;
+  max-width: 1200px;
+  padding: var(--spacing-m);
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  background-color: var(--colour-background-light);
+  border-bottom: 1px solid var(--colour-primary-tint);
+}
+
+.logo {
+  height: 150px;
+  width: 150pxx;
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.header__link {
+  margin: 0;
+  text-decoration: none;
+  color: var(--colour-text-body);
+  font-weight: 600;
+}
+.header__link:hover { color: var(--colour-primary); }
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+/* Hero */
+
+.hero__title {
+  margin-top: 0;
+  font-size: var(--font-size-heading-l);
+  margin-bottom: var(--spacing-m);
+  color: var(--colour-text-heading);
+}
+
+.hero__subtitle {
+  font-size: var(--font-size-body);
+  color: var(--colour-text-body);
+  margin-bottom: var(--spacing-m);
+}
+
+.hero__image {
+  width: 75%;
+  max-width: 600px;
+}
+
+
+/* ==========================================================================
+   TABS (VARIANTS + BUTTONS + CONTENT)
+   ========================================================================== */
+@media (min-width: 800px) {
+  .tabs {
+    display: flex;
+  }
+}
+
+/* Tabs - variants */
+.tabs--top {
+  flex-direction: column;
+}
+
+.tabs--bottom {
+  flex-direction: column-reverse;
+}
+
+.tabs--left {
+  flex-direction: row;
+}
+
+.tabs--right {
+  flex-direction: row-reverse;
+}
+
+/* Tab Buttons */
+.tabs__buttons {
+  display: flex;
+}
+
+.tabs--left .tabs__buttons,
+.tabs--right .tabs__buttons {
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Tab Button */
+.tabs__button {
+  cursor: pointer;
+  background: none;
+  padding: 10px;
+  transition: all 300ms;
+  text-align: left;
+  border: none;
+  flex: 1;
+}
+
+.tabs__button:hover,
+.tabs__button--selected {
+  background: #f0ebfa; /* consider mapping to a variable if desired */
+}
+
+.tabs--top .tabs__button {
+  border-right: 1px solid #f0ebfa;
+  border-bottom: 10px solid transparent;
+}
+
+.tabs--top .tabs__button--selected {
+  border-bottom-color: #794cff; /* consider using --colour-primary */
+}
+
+.tabs--bottom .tabs__button {
+  border-right: 1px solid #f0ebfa;
+  border-top: 10px solid transparent;
+}
+
+.tabs--bottom .tabs__button--selected {
+  border-top-color: #794cff; /* consider using --colour-primary */
+}
+
+.tabs--left .tabs__button {
+  border-bottom: 1px solid #f0ebfa;
+  border-right: 10px solid transparent;
+}
+
+.tabs--left .tabs__button--selected {
+  border-right-color: #794cff; /* consider using --colour-primary */
+}
+
+.tabs--right .tabs__button {
+  border-bottom: 1px solid #f0ebfa;
+  border-left: 10px solid transparent;
+}
+
+.tabs--right .tabs__button--selected {
+  border-left-color: #794cff; /* consider using --colour-primary */
+}
+
+.tabs--top .tabs__button:last-child,
+.tabs--bottom .tabs__button:last-child {
+  border-right: none;
+}
+
+.tabs--left .tabs__button:last-child,
+.tabs--right .tabs__button:last-child {
+  border-bottom: none;
+}
+
+.tabs__button-title {
+  font-size: var(--font-size-body);
+  font-weight: bold;
+}
+
+.tabs__button-text {
+  font-size: var(--font-size-body);
+  line-height: var(--font-line-height-body);
+}
+
+/* Tab Contents */
+.tabs__contents {
+  flex: 2;
+}
+
+.tabs__content {
+  font-size: var(--font-size-body);
+  display: none;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.tabs__content--selected {
+  display: flex;
+}
+
+.tabs__text {
+  flex: 2;
+}
+
+.tabs__image {
+  flex: 1;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+/* ==========================================================================
+   TRUST (FEATURE CARDS)
+   ========================================================================== */
+/* Trust Section */
+
+.brand_title {
+  font-size: var(--font-size-heading-m);
+  margin-bottom: var(--spacing-l);
+  color: var(--colour-text-heading);
+}
+
+.brand_items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--spacing-m);
+}
+
+.brand_item {
+  flex: 1 1 calc(25% - var(--spacing-m));
+  background-color: var(--colour-primary-tint);
+  padding: var(--spacing-s);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* ==========================================================================
+   CTA (CALLOUT)
+   ========================================================================== */
+/* CTA Section */
+
+@media (min-width: 800px) {
+  .coupon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.coupon__content {
+  flex: 1;
+  text-align: left;
+  padding: var(--spacing-s);
+}
+
+.coupon__title {
+  font-size: var(--font-size-heading-m);
+  margin-bottom: var(--spacing-s);
+  color: var(--colour-text-heading);
+}
+
+.coupon__subtitle {
+  font-size: var(--font-size-body);
+  margin-bottom: var(--spacing-m);
+  color: var(--colour-text-body);
+}
+
+.coupon__button {
+  padding: var(--spacing-s) var(--spacing-m);
+  font-size: var(--font-size-body);
+  color: #fff;
+  background-color: var(--colour-primary);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.coupon__button:hover {
+  background-color: #675bcb; /* hover tint; could be another variable */
+}
+/* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+/* Testimonial Section */
+
+.testimonial__title {
+  font-size: var(--font-size-heading-m);
+  margin-bottom: var(--spacing-l);
+  color: var(--colour-text-heading);
+}
+
+.testimonial__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: var(--spacing-m);
+}
+
+.testimonial__item {
+  flex: 1 1 calc(33% - var(--spacing-m));
+  background-color: var(--colour-primary-tint);
+  padding: var(--spacing-s);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+/* ==========================================================================
+   STATS (BANNER)
+   ========================================================================== */
+/* Stats Section */
+.stats {
+  text-align: center;
+  padding: var(--spacing-l) var(--spacing-m);
+  background-color: var(--colour-primary);
+  border-radius: var(--border-radius);
+  color: var(--colour-primary-tint);
+}
+
+.stats__title {
+  font-size: var(--font-size-heading-m);
+}
+
+/* Social Media */
+
+.social__logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.social__logos img {
+  width: 68px;
+  height: auto;
+}
+
+
+@media (min-width: 800px) {
+  .delivery__logos {
+    flex-direction: row;
+  }
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+/* Footer */
+.footer {
+  text-align: center;
+  padding: var(--spacing-m) var(--spacing-s);
+  background-color: var(--colour-background-dark);
+  color: #fff;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 var(--spacing-xs);
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}

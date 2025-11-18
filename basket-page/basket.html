@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio-Celest: Basket</title>
+  <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <img class="logo" src="product-images/logo-studio-celest.png" alt="Studio Celest Logo"/>
+    </div>
+
+  <nav class="header__nav">
+    <a href="../front-page/index.html"    class="header__link">Home</a>
+    <a href="../products-page/product.html" class="header__link">Products</a>
+    <a href="../basket-page/basket.html"  class="header__link">Basket(<span id="basket-count">0</span>)</a>
+    <a href="../contact-page/contact.html" class="header__link">Contact</a>
+  </nav>
+</header>
+
+  <!-- Page Heading -->
+  <section class="page">
+    <h1>Your Shopping Basket</h1>
+    <a href="../products-page/product.html" class="banner-btn" style="margin-top: 10px; display: inline-block;">Continue Shopping</a>
+  </section>
+
+  <!-- Basket Items -->
+  <section class="basket-page">
+    <div class="basket-container" id="basket-container">
+      <!-- JS will render basket items here -->
+    </div>
+
+    <!-- Basket Summary -->
+    <div class="basket-summary">
+      <h3>Total: <span id="basket-total">£0.00</span></h3>
+      <a href="../front-page/index.html" class="btn-pay" id="pay-here">Pay Here</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <div class="footer">
+  <p>&copy; 2025 Studio-Celest. All rights reserved.</p>
+  </div>
+  <script src="../products-page/product.js"></script>
+</body>
+</html>

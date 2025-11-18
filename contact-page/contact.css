@@ -1,0 +1,89 @@
+/* Font family rule */
+body {
+  font-family: "Inter", sans-serif; /* ensure Inter is loaded via <link> or @import */
+  color: var(--colour-text-body);
+  font-size: var(--font-size-body);
+  line-height: var(--font-line-height-body);
+}
+
+/* ===== Header & Logo ===== */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  background-color: var(--colour-background-light);
+  border-bottom: 1px solid var(--colour-primary-tint);
+}
+
+.logo {
+  height: 150px;
+  width: 150pxx;
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.header__link {
+  margin: 0;
+  text-decoration: none;
+  color: var(--colour-text-body);
+  font-weight: 600;
+}
+.header__link:hover { color: var(--colour-primary); }
+
+.page {
+  text-align: center;
+  padding: 25px 25px;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio-Celest: Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+  <header class="header">
+    <div class="header__brand">
+      <img class="logo" src="frontpage-images/logo-studio-celest.png" alt="Studio Celest Logo"/>
+    </div>
+
+  <nav class="header__nav">
+    <a href="../front-page/index.html"    class="header__link">Home</a>
+    <a href="../products-page/product.html" class="header__link">Products</a>
+    <a href="../basket-page/basket.html"  class="header__link">Basket(<span id="basket-count">0</span>)</a>
+    <a href="../contact-page/contact.html" class="header__link">Contact</a>
+  </nav>
+
+  </header>
+
+    <div class="content-block">
+      <div class="content-block__content">
+        <div class="hero">
+          <h2 class="hero__title">The Best of Celest<br />Fashion we know you will Love!</h2>
+          <p class="hero__subtitle">We partnered with the worlds top brands, 
+          so we could bring you exclusive products and deals.</p>
+          <img class="hero__image"
+            src="frontpage-images/Banner.jpg"
+            alt="Banner Image"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block content-block--alt">
+      <div class="content-block__content">
+        <div class="Products">
+          <div class="tabs tabs--right">
+            <nav class="tabs__buttons">
+              <button data-tab="Shoes"
+                class="tabs__button tabs__button--selected">
+                <p class="tabs__button-title">Shoes</p>
+                <p class="tabs__button-text">Popular Brands, High Qaulity.</p>
+              </button>
+              <button data-tab="Watches" class="tabs__button">
+                <p class="tabs__button-title">Watches</p>
+                <p class="tabs__button-text">From Rolex to Casio, its all right here.</p>
+              </button>
+              <button data-tab="Shirts" class="tabs__button">
+                <p class="tabs__button-title">Shirts</p>
+                <p class="tabs__button-text">Check out our range of threads.</p>
+              </button>
+              <button data-tab="Caps" class="tabs__button">
+                <p class="tabs__button-title">Caps</p>
+                <p class="tabs__button-text">Baseball, Beanie, High profile, the choice is yours.</p>
+              </button>
+            </nav>
+
+            <article class="tabs__contents">
+              <div
+                data-tab-content="Shoes"
+                class="tabs__content tabs__content--selected"
+              >
+                <div class="tabs__image">
+                  <img src="frontpage-images/red-shoe.avif" alt="Shoe" />
+                </div>
+              </div>
+
+              <div data-tab-content="Watches" class="tabs__content">
+                <div class="tabs__image">
+                  <img src="frontpage-images/Watch.avif" alt="Watch" />
+                </div>
+              </div>
+
+              <div data-tab-content="Shirts" class="tabs__content">
+                <div class="tabs__image">
+                  <img src="frontpage-images/shirt.avif" alt="Shirt" />
+                </div>
+              </div>
+
+              <div data-tab-content="Caps" class="tabs__content">
+                <div class="tabs__image">
+                  <img src="frontpage-images/caps.avif" alt="Cap" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="content-block">
+      <div class="content-block__content">
+        <div class="brands">
+          <h3 class="brand_title">Top Brand Partnerships</h3>
+          <div class="brand_items">
+            <div class="brand_item">
+              <p>Craze</p>
+            </div>
+            <div class="brand_item">
+              <p>Domino</p>
+            </div>
+            <div class="brand_item">
+              <p>Puru</p>
+            </div>
+            <div class="brand_item">
+              <p>Yash</p>
+            </div>
+            <div class="brand_item">
+              <p>Nike</p>
+            </div>
+            <div class="brand_item">
+              <p>Lacoste</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block content-block--alt">
+      <div class="content-block__content">
+        <div class="coupon">
+          <div class="coupon__content">
+            <h3 class="coupon__title">10% Off all products on all Orders above £500</h3>
+            <p class="coupon__subtitle">
+              If your basket total exceeds £500, Click the button below to apply 10% off your entire order!
+            </p>
+            <button class="coupon__button">Click here (10%)</button>
+          </div>
+          <img
+            class="coupon_img" width="350px"
+            src="frontpage-images/discount.avif"
+            alt="Coupon image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-block__content">
+        <div class="testimonial">
+          <h3 class="testimonial__title">What people think about us</h3>
+
+          <div class="tabs tabs--bottom">
+            <nav class="tabs__buttons">
+              <button
+                data-tab="dave"
+                class="tabs__button tabs__button--selected"
+              >
+                <p class="tabs__button-title">Naomi</p>
+                <p class="tabs__button-text">Multiple Purchases</p>
+              </button>
+              <button data-tab="geoffrey" class="tabs__button">
+                <p class="tabs__button-title">Geoffrey</p>
+                <p class="tabs__button-text">Loves Simplicity</p>
+              </button>
+              <button data-tab="beatrice" class="tabs__button">
+                <p class="tabs__button-title">Bob</p>
+                <p class="tabs__button-text">Big Brand Man</p>
+              </button>
+            </nav>
+
+            <article class="tabs__contents">
+              <div
+                data-tab-content="dave"
+                class="tabs__content tabs__content--selected"
+              >
+                <div class="tabs__text">
+                  <p>
+                    “The website is clean and easy to use, 
+                    and the clothes fit my style better than anything else I’ve bought.”
+                  </p>
+                </div>
+              </div>
+
+              <div data-tab-content="geoffrey" class="tabs__content">
+                <div class="tabs__text">
+                  <p>
+                    “This shop is my go-to now because the designs are fresh, 
+                    the quality’s solid, and the site is simple to browse.”
+                  </p>
+                </div>
+              </div>
+
+              <div data-tab-content="beatrice" class="tabs__content">
+                <div class="tabs__text">
+                  <p>
+                    “I love this brand — the clothes feel premium for the price,
+                    and the website is smooth and modern to use.”
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-block__content">
+        <div class="stats">
+          <h3 class="stats__title">
+            We have a 95% satisfaction rate from all our customers!
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-block__content">
+          <div class="social__logos">
+            <img class="social__logo" src="frontpage-images/insta.jpg" alt="" />
+            <img class="social__logo" src="frontpage-images/facebook.jpg" alt="" />
+            <img class="social__logo" src="frontpage-images/twitter.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+    <footer class="footer">
+      <p>&copy; stuido-celest.com</p>
+      <nav>
+        <a href="#" class="footer__link">Privacy Policy</a>
+      </nav>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
