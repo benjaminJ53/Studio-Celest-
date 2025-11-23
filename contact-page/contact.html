@@ -8,49 +8,50 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__brand">
-      <img class="logo" src="contact-images/logo-studio-celest.png" alt="Studio Celest Logo"/>
+    <img class="logo" src="contact-images/logo-studio-celest.png" alt="Studio Celest Logo">
+    <nav class="nav">
+      <a href="../front-page/index.html" class="nav-link">Home</a>
+      <a href="../products-page/product.html" class="nav-link">Products</a>
+      <a href="../basket-page/basket.html" class="nav-link">Basket(<span id="basket-count">0</span>)</a>
+      <a href="../contact-page/contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h2 class="hero-title">Contact Us</h2>
+    <p class="hero-subtitle">Have questions? Need support? Fill out the form below and we’ll get back to you as soon as possible.</p>
+  </div>
+
+  <div class="section">
+    <div class="contact-box">
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="your@email.com" required>
+
+        <label for="subject">Subject:</label>
+        <input id="subject" name="subject" type="text" placeholder="Subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </div>
+  </div>
 
-  <nav class="header__nav">
-    <a href="../front-page/index.html"    class="header__link">Home</a>
-    <a href="../products-page/product.html" class="header__link">Products</a>
-    <a href="../basket-page/basket.html"  class="header__link">Basket(<span id="basket-count">0</span>)</a>
-    <a href="../contact-page/contact.html" class="header__link">Contact</a>
-  </nav>
-</header>
+  <footer class="footer">
+    <div class="footer-icons">
+      <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="50" height="50">
+      <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="50" height="50">
+      <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X" width="50" height="50">
+    </div>
+    <p class="footer-copy">© 2025 Studio Celest</p>
+    <p class="footer-policy">Privacy Policy</p>
+  </footer>
 
-  <!-- ===== Page Hero ===== -->
-  <section class="page">
-    <h1>Contact Us</h1>
-    <p>Have questions? Need support? Fill out the form below and we’ll get back to you as soon as possible.</p>
-  </section>
-
-  <!-- ===== Contact Form ===== -->
-  <section class="contact-form">
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="your@email.com" required>
-
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-      <button type="submit" class="banner-btn">Send Message</button>
-    </form>
-  </section>
-
-
-  <!-- Footer -->
-  <footer>
-  <p>&copy; 2025 Studio-Celest. All rights reserved.</p>
-</footer>
-
-<script src="Products Page/product.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>

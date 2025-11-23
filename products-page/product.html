@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Studio-Celest: Products</title>
-  <link rel="stylesheet" href="product.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__brand">
-      <img class="logo" src="product-images/logo-studio-celest.png" alt="Studio Celest Logo"/>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio-Celest: Products</title>
+    <link rel="stylesheet" href="product.css">
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="product-images/logo-studio-celest.png" alt="Studio Celest Logo">
+      <nav class="nav">
+        <a href="../front-page/index.html" class="nav-link">Home</a>
+        <a href="../products-page/product.html" class="nav-link">Products</a>
+        <a href="../basket-page/basket.html" class="nav-link">Basket(<span id="basket-count">0</span>)</a>
+        <a href="../contact-page/contact.html" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <div class="section">
+      <h1 class="page-title">Our Products</h1>
+      <p class="page-sub">Discover premium clothing & accessories for your lifestyle.</p>
     </div>
 
-  <nav class="header__nav">
-    <a href="../front-page/index.html"    class="header__link">Home</a>
-    <a href="../products-page/product.html" class="header__link">Products</a>
-    <a href="../basket-page/basket.html"  class="header__link">Basket(<span id="basket-count">0</span>)</a>
-    <a href="../contact-page/contact.html" class="header__link">Contact</a>
-  </nav>
-</header>
+    <div class="section">
+      <div id="product-list" class="product-grid"></div>
+    </div>
 
-<section class="product-banner">
-  <div>
-    <h1>Our Products</h1>
-    <p>Discover premium Cloth & Accessaries essentials for your business and lifestyle.</p>
-  </div>
-</section>
+    <div class="section">
+      <a href="../basket-page/basket.html" class="banner-btn">Check Out</a>
+    </div>
 
-<br><br>
- <!-- JS will render all products here -->
-  <section class="product-grid" id="product-list">
-  </section>
+    <footer class="footer">
+      <div class="footer-icons">
+        <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="50" height="50">
+        <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="50" height="50">
+        <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X" width="50" height="50">
+      </div>
+      <p class="footer-copy">© 2025 Studio Celest</p>
+      <p class="footer-policy">Privacy Policy</p>
+    </footer>
 
-<section class="checkout-btn">
-  <div>
-    <a href="../basket-page/basket.html" class="banner-btn">Check Out</a>
-  </div>
-</section>
-
-
-<footer>
-  <p>&copy; 2025 Studio-Celest. All rights reserved.</p>
-</footer>
-
-<script src="product.js"></script>
-</body>
+    <script src="product.js"></script>
+  </body>
 </html>
