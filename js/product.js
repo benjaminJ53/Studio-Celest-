@@ -1,24 +1,24 @@
 const products = [
-  {id:1, name:"Basket Ball Cap", price:49.99, inStock:true, image:"product-images/India Cap.jpg"},
-  {id:2, name:"Crazy Cap", price:50.99, inStock:true, image:"product-images/Craze Cap.jpg"},
-  {id:3, name:"Cucu Watch", price:150.99, inStock:true, image:"product-images/Cucu Watch.jpg"},
-  {id:4, name:"Domino Watch", price:199.99, inStock:true, image:"product-images/Domino Watch.jpg"},
-  {id:5, name:"Dont Judge Cap", price:29.99, inStock:true, image:"product-images/Dont Judge Cap.png"},
-  {id:6, name:"Faith T-Shirt", price:30.00, inStock:true, image:"product-images/Faith T-shirt.jpg"},
-  {id:7, name:"Gee T-Shirt", price:49.99, inStock:true, image:"product-images/Gee T-shirt.jpg"},
-  {id:8, name:"Grace T-Shirt", price:50.99, inStock:true, image:"product-images/Grace Shirt.jpg"},
-  {id:9, name:"India Cap", price:49.99, inStock:true, image:"product-images/India Cap.jpg"},
-  {id:10, name:"Lady Cap", price:15.99, inStock:true, image:"product-images/White Lady Cap.jpg"},
-  {id:11, name:"MC T-Shirt", price:19.99, inStock:true, image:"product-images/MC-Tshirt.jpg"},
-  {id:12, name:"MeMe T-Shirt", price:19.99, inStock:false, image:"product-images/Me-Tshirt.jpg"},
-  {id:13, name:"Men Cap", price:49.99, inStock:true, image:"product-images/White Man Cap.png"},
-  {id:14, name:"Men T-Shirt", price:29.99, inStock:true, image:"product-images/Tealer Shirt.jpg"},
-  {id:15, name:"Puru Watch", price:19.99, inStock:false, image:"product-images/Puru Watch.jpg"},
-  {id:16, name:"Rick Watch", price:159.99, inStock:true, image:"product-images/Rick Watch.jpg"},
-  {id:17, name:"Studio Watch", price:49.99, inStock:true, image:"product-images/Studio Watch.jpg"},
-  {id:18, name:"Sun Watch", price:50.99, inStock:true, image:"product-images/Sun Watch.jpg"},
-  {id:19, name:"Tape Watch", price:299.99, inStock:true, image:"product-images/Tape Wach.jpg"},
-  {id:20, name:"Yash Watch", price:19.99, inStock:false, image:"product-images/Yash Watch.jpg"}
+  {id:1, name:"Basket Ball Cap", price:49.99, inStock:true, image:"images/India Cap.jpg"},
+  {id:2, name:"Crazy Cap", price:50.99, inStock:true, image:"images/Craze Cap.jpg"},
+  {id:3, name:"Cucu Watch", price:150.99, inStock:true, image:"images/Cucu Watch.jpg"},
+  {id:4, name:"Domino Watch", price:199.99, inStock:true, image:"images/Domino Watch.jpg"},
+  {id:5, name:"Dont Judge Cap", price:29.99, inStock:true, image:"images/Dont Judge Cap.png"},
+  {id:6, name:"Faith T-Shirt", price:30.00, inStock:true, image:"images/Faith T-shirt.jpg"},
+  {id:7, name:"Gee T-Shirt", price:49.99, inStock:true, image:"images/Gee T-shirt.jpg"},
+  {id:8, name:"Grace T-Shirt", price:50.99, inStock:true, image:"images/Grace Shirt.jpg"},
+  {id:9, name:"India Cap", price:49.99, inStock:true, image:"images/India Cap.jpg"},
+  {id:10, name:"Lady Cap", price:15.99, inStock:true, image:"images/White Lady Cap.jpg"},
+  {id:11, name:"MC T-Shirt", price:19.99, inStock:true, image:"images/MC-Tshirt.jpg"},
+  {id:12, name:"MeMe T-Shirt", price:19.99, inStock:false, image:"images/Me-Tshirt.jpg"},
+  {id:13, name:"Men Cap", price:49.99, inStock:true, image:"images/White Man Cap.png"},
+  {id:14, name:"Men T-Shirt", price:29.99, inStock:true, image:"images/Tealer Shirt.jpg"},
+  {id:15, name:"Puru Watch", price:19.99, inStock:false, image:"images/Puru Watch.jpg"},
+  {id:16, name:"Rick Watch", price:159.99, inStock:true, image:"images/Rick Watch.jpg"},
+  {id:17, name:"Studio Watch", price:49.99, inStock:true, image:"images/Studio Watch.jpg"},
+  {id:18, name:"Sun Watch", price:50.99, inStock:true, image:"images/Sun Watch.jpg"},
+  {id:19, name:"Tape Watch", price:299.99, inStock:true, image:"images/Tape Wach.jpg"},
+  {id:20, name:"Yash Watch", price:19.99, inStock:false, image:"images/Yash Watch.jpg"}
 ];
 
 function getBasket(){
@@ -128,7 +128,7 @@ function handlePayment(){
   alert("Payment successful! Thank you.");
   renderBasketCount();
   renderBasket();
-  window.location.href="../front-page/index.html";
+  window.location.href="index.html";
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
